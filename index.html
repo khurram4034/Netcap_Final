@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetCap</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="stack m-0 w-screen" style="min-height: 100vh; background-color: #0F053B; position: relative;" >
+  <div style="position: relative;" class="stack w-full">
+    <div id="nav-bar-mobile" class="stack mx-1.5 lg-hidden rounded-b-l rounded-b-r" style="background-color: rgba(255, 255, 255, 0.4);">
+      <div id="nav-header" class="stack">
+        <div class="flex align-center" style="padding: 24px 20px;">
+          <img src="./assets/NetcapLogo.svg" alt="logo" style="width: 150px; height: 30px" />
+          <div style="flex-grow: 1;"></div>
+          <img onclick="openMobileMenu()" id="menu-icon" src="./assets/Icon-Outline-menu.svg" alt="menu" style="width: 44px; height: 44px" />
+          <img class="hidden" onclick="closeMobileMenu()" id="close-icon" src="./assets/Icon-Outline-x.svg" alt="close" style="width: 44px; height: 44px" />
+        </div>
+        <div id="nav-mobile-links" class="stack rounded-b-l rounded-b-r w-full bg-white" style="padding-bottom: 10px; display: none;">
+          <a class="nav-mobile-link text-primary">Home</a>
+          <a class="nav-mobile-link" style="color: black;">About Us</a>
+          <a class="nav-mobile-link" style="color: black;">Portals</a>
+          <a class="nav-mobile-link" style="color: black;">Clients</a>
+          <a class="nav-mobile-link" style="color: black;">Reviews</a>
+          <a class="nav-mobile-link" style="color: black;">Contact Us</a>
+        </div> 
+      </div>
+    </div>
+    <div id="nav-bar-desktop" class="hidden container lg-flex align-center justify-between" style="margin-top: 30px;">
+      <img src="./assets/NetcapLogo.svg" alt="logo" style="width: 150px; height: 30px" />
+      <div class="flex justify-center flex-grow gap-2">
+        <a class="nav-desktop-link text-primary">Home</a>
+        <a class="nav-desktop-link">About Us</a>
+        <a class="nav-desktop-link">Portals</a>
+        <a class="nav-desktop-link">Clients</a>
+        <a class="nav-desktop-link">Reviews</a>     
+      </div>
+      <button class="bg-transparent border border-primary rounded-pill flex justify-between align-center px-1.5 gap-1">
+        <p class="text-white font-bold flex-grow">Contact Us</p>
+        <img src="./assets/chevron-right.svg" alt="right icon" style="width: 11px; height: 18px" />
+      </button>
+    </div>
+  </div>
+  <div class="container flex text-white sm-mt-36px lg-mt-100px" style="margin-bottom: 1rem; gap: 6rem;">
+    <div class="flex-grow">
+      <div class="stack mx-1.5 lg-mx-0">
+        <h1 class="text-center sm-font-xl lg-font-3xl lg-mb-50px my-2">Welcome to <span class="text-primary">NetCap</span></h1>
+        <div class="mx-auto lg-hidden w-full" style="max-width: 315px; max-height: 550px; position: relative;">
+          <img src="./assets/play-button.svg" alt="play" class="mobile-play-btn" />
+          <img class="w-full" src="./assets/boy-mobile.png" alt="player" />
+        </div>
+        <p class="sm-font-md lg-font-lg">
+          <span class="text-primary">Netcap Franchise Consultants</span> is an <span class="text-primary">ad management</span> firm specializing in the online franchise directories commonly known as “franchise portals”.
+          <br /><br />
+          We've been providing portal ad placement and prospect qualification services to franchise developers nationwide since 2000, and offer a unique, virtually risk-free advertising program that, twenty-two years after our founding, remains <span class="text-primary">unduplicated in the industry</span>
+          <br /><br />
+          Netcap <span class="text-primary">empowers franchisors</span> with complete control over their ads, including the content and consistency of their message, what is verbally communicated to their ad respondents, and, most importantly, to whom their leads are delivered.
+          <br /><br />
+          It is our mission to protect clients from having their ad campaigns taken advantage of by brokers, referral agents, and others who are not their exclusive advocates by making high-volume franchise portal advertising 
+          and lead processing <span class="text-primary">simple and affordable</span>.
+        </p>
+        <div class="flex align-center rounded-default" style="background-color: rgba(255, 255, 255, 0.4); margin-top: 41px;">
+          <h2 class="text-primary font-bold text-center mx-1" style="font-size: 200%; font-style: italic;">
+            Twenty-two years of excellence in franchize lead generation
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="hidden lg-flex">
+      <div class="m-auto" style="height: 720px; width: 405px; position: relative;">
+        <img src="./assets/play-button.svg" alt="play" class="desktop-play-btn" />
+        <img class="w-full" alt="player" src="./assets/boy-desktop.png" />
+      </div>
+    </div>
+  </div>
+  <hr class="w-full" style="margin-top: auto;" />
+  <div class="container text-white stack">
+    <div class="flex flex-grow align-center justify-between px-1">
+      <p>	© 2000-2022 Netcap Franchise Consultants, LLC</p>
+      <div class="flex gap-1 align-center">
+        <img alt="instagram" src="./assets/icons8-instagram 1.svg" style="width: 30px; height: 30px;" />
+        <img alt="twitter" src="./assets/icons8-twitter 1.svg" style="width: 30px; height: 30px;" />
+        <img alt="facebook" src="./assets/icons8-facebook 1.svg" style="width: 30px; height: 30px;" />
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
